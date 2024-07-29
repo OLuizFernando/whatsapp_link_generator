@@ -27,14 +27,15 @@
     </nav>
     <div class="d-flex flex-column full-screen">
         <div class="w-50 mb-4">
-            <label for="number-input" class="form-label">Phone number</label>
-            <input class="form-control mb-3" type="text" placeholder="(00) 9 9999-9999" id="number-input">
+            <label for="number-input" class="form-label">Cellphone number</label>
+            <input class="form-control mb-3" type="text" placeholder="(00) 9 9999-9999" id="number-input" required>
             <label for="message-input" class="form-label">Your message (optional)</label>
-            <textarea class="form-control" type="text" placeholder="If this field is left empty, a link only to your phone number will be generated" id="message-input"></textarea>
+            <textarea class="form-control" type="text" placeholder="If this field is left empty, a link only to your cellphone number will be generated" id="message-input"></textarea>
         </div>
         <div class="text-center">
             <button type="button" class="btn btn-success rounded-pill" id="generate-btn">Generate link</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
