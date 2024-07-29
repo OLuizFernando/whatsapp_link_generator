@@ -28,3 +28,12 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
     document.getElementById("link").value = whatsappLink
 })
+
+// adding event for copying link to clipboard
+document.getElementById("copy-btn").addEventListener("click", function() {
+    let link = document.getElementById("link").value
+
+    navigator.clipboard.writeText(link)
+
+    alert("Link copied to clipboard.")
+})
